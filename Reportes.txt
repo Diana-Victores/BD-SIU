@@ -1,0 +1,11 @@
+1.4 -> 1.5
+por Leonel Dominguez:
+
+1. Se agregarón tablas (Estatus, Registro_Plataforma, actividadeseducativas).
+2. Se modificarón el tipo de campos para los pagos en donde se ingresarán cantidades de efectivo y notas. 
+   quedando estas de la siguiente manera VARCHAR -> FLOAT.
+3. Se cambio el tamaño de los campos de correo antes 25 -> 50.
+4. Se eliminarón tablas por ejemplo RegistroPlataformaAlumno, RegistroPlataformaMaestro.
+
+
+

@@ -293,7 +293,6 @@ CREATE TABLE actividadeseducativas(
   FOREIGN KEY (PK_codigo_estatus) REFERENCES estatus(PK_codigo_estatus)
 ) ENGINE = INNODB DEFAULT CHARSET = latin1;
 
-
 -- -----------------------------------------------------
 -- Table `educativo`.`notas`
 -- -----------------------------------------------------

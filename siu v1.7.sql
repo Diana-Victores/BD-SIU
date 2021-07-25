@@ -355,3 +355,26 @@ CREATE TABLE asignacioncursosmaestros (
   FOREIGN KEY (PK_codigo_curso) REFERENCES cursos(PK_codigo_curso),
   FOREIGN KEY (PK_codigo_maestro) REFERENCES maestros(PK_codigo_maestro)
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
+
+-- -----------------------------------------------------
+-- Table `educativo`.`bitacora`
+-- -----------------------------------------------------
+CREATE TABLE bitacora (
+  PK_id_bitacora INT NOT NULL AUTO_INCREMENT,
+  PK_id_usuario VARCHAR(25) NOT NULL,
+  fecha VARCHAR(25)  null DEFAULT NULL,
+  hora VARCHAR(25) NULL DEFAULT NULL,
+  host1 VARCHAR(45) NULL DEFAULT NULL,
+  ip VARCHAR(25) NULL DEFAULT NULL,
+  accion VARCHAR(50) NULL DEFAULT NULL,
+  tabla VARCHAR(45) NULL DEFAULT NULL,
+  PK_codigo_facultad VARCHAR(45) NULL DEFAULT NULL,
+  PK_codigo_carrera VARCHAR(45) NULL DEFAULT NULL,
+  PK_codigo_sede VARCHAR(45) NULL DEFAULT NULL,
+  PK_codigo_jornada VARCHAR(45) NULL DEFAULT NULL,
+  PRIMARY KEY (PK_id_bitacora),
+  FOREIGN KEY (PK_codigo_facultad) REFERENCES facultades(PK_codigo_facultad),
+  FOREIGN KEY (PK_codigo_carrera) REFERENCES carreras(PK_codigo_carrera),
+  FOREIGN KEY (PK_codigo_sede) REFERENCES sedes(PK_codigo_sede),
+  FOREIGN KEY (PK_codigo_jornada) REFERENCES jornadas(PK_codigo_jornada)
+) ENGINE = InnoDB DEFAULT CHARSET = latin1;

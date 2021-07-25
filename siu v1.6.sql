@@ -218,6 +218,23 @@ CREATE TABLE jornadas (
   FOREIGN KEY (PK_codigo_estatus) REFERENCES estatus(PK_codigo_estatus)
 ) ENGINE = INNODB DEFAULT CHARSET = latin1;
 
+
+-- -----------------------------------------------------
+-- Table `educativo`.`Permisos`
+-- -----------------------------------------------------
+CREATE TABLE permisos(
+PK_id_usuario VARCHAR(5) NOT NULL,
+PK_id_perfil VARCHAR (5) NOT NULL,
+nombre_usuario VARCHAR(45) NOT NULL,
+ingresar  TINYINT(2) NOT NULL,
+consultar  TINYINT(2) NOT NULL,
+modifcar TINYINT(2) NOT NULL,
+eliminar  TINYINT(2) NOT NULL,
+PRIMARY KEY (PK_id_usuario, PK_id_perfil)
+
+) ENGINE = InnoDB DEFAULT CHARSET = latin1;
+
+
 --------------------------------------------------
 -- Table `educativo`.`asignacion cursos a alumno`
 -- -----------------------------------------------------

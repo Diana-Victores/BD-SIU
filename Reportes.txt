@@ -7,5 +7,9 @@ por Leonel Dominguez:
 3. Se cambio el tamaño de los campos de correo antes 25 -> 50.
 4. Se eliminarón tablas por ejemplo RegistroPlataformaAlumno, RegistroPlataformaMaestro.
 
+1.5 -> 1.6
+Rita Sipaque 
+Se agro la tabla "Permisos", con el objetivo de  asignar permisos a los usuarios y perfiles.
+
 
 

@@ -15,4 +15,8 @@ Se agro la tabla "Permisos", con el objetivo de  asignar permisos a los usuarios
 Luis Lee
 Se agrego tabla bitacora para llevar el control de todas las acciones que se hagan.
 
+1.7 -> 1.8
+Diana Victores 
+Se agrego tabla "Perfil", con el objetivo de tener permisos como usuarios. 
+
 

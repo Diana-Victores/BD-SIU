@@ -9,10 +9,12 @@ por Leonel Dominguez:
 
 1.5 -> 1.6
 Rita Sipaque 
-Se agro la tabla "Permisos", con el objetivo de  asignar permisos a los usuarios y perfiles.
+Se agrego la tabla "Permisos", con el objetivo de  asignar permisos a los usuarios y perfiles.
 
 1.6 -> 1.7
 Luis Lee
 Se agrego tabla bitacora para llevar el control de todas las acciones que se hagan.
 
-
+1.7 -> 1.8
+Rita Sipaque 
+Se modfico la tabla permisos , se agrego la llave foranea.

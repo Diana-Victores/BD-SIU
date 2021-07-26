@@ -225,14 +225,12 @@ CREATE TABLE jornadas (
 CREATE TABLE permisos(
 PK_email_usuario VARCHAR(50) NOT NULL,
 PK_id_perfil VARCHAR (50) NOT NULL,
-nombre_usuario VARCHAR(50) NOT NULL,
 ingresar  TINYINT(2) NOT NULL,
 consultar  TINYINT(2) NOT NULL,
 modifcar TINYINT(2) NOT NULL,
 eliminar  TINYINT(2) NOT NULL,
 PRIMARY KEY (PK_email_usuario, PK_id_perfil),
 FOREIGN KEY (PK_email_usuario) REFERENCES Registro_Plataforma (email_usuario)
-
 ) ENGINE = InnoDB DEFAULT CHARSET = latin1;
 
 
